@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Reparto de camellos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <nav>
+    <a href="#camellos">Camellos</a>
+    <a href="#merienda">Merienda</a>
+    <a href="#raices">Raíces</a>
+    <a href="#pi">Número Pi</a>
+</nav>
+<section id="camellos"><h1>Reparto de los 35 camellos</h1>
+
+    <p>Ingresa los datos de los tres herederos.</p>
+
+    <form id="formulario">
+
+        <label>Cantidad de camellos:</label>
+        <input type="number" id="total" required>
+
+        <h2>Heredero 1</h2>
+        <label>Numerador:</label>
+        <input type="number" id="num1" required>
+        <label>Denominador:</label>
+        <input type="number" id="den1" required>
+
+        <h2>Heredero 2</h2>
+        <label>Numerador:</label>
+        <input type="number" id="num2" required>
+        <label>Denominador:</label>
+        <input type="number" id="den2" required>
+
+        <h2>Heredero 3</h2>
+        <label>Numerador:</label>
+        <input type="number" id="num3" required>
+        <label>Denominador:</label>
+        <input type="number" id="den3" required>
+
+        <button type="submit">Calcular reparto</button>
+
+    </form>
+
+    <p id="resultado"></p>
+</section>
+    
+
+
+
+
+<hr>
+
+<section id="merienda"><h1>La merienda del Sombrerero Loco</h1>
+
+<p>Elige una bebida y la cantidad de tazas.</p>
+
+<form id="formularioMerienda">
+
+    <label>Nombre del invitado:</label>
+    <input type="text" id="nombre" required>
+
+    <label>Tipo de bebida:</label>
+    <select id="bebida" required>
+        <option value="">Selecciona una bebida</option>
+        <option value="te">Té - 5 Bs</option>
+        <option value="cafe">Café - 8 Bs</option>
+        <option value="jugo">Jugo - 6 Bs</option>
+        <option value="chocolate">Chocolate - 10 Bs</option>
+    </select>
+
+    <label>Cantidad de tazas:</label>
+    <input type="number" id="tazas" min="1" required>
+
+    <button type="submit">Calcular cuenta</button>
+
+</form>
+
+<p id="resultadoMerienda"></p></section>
+
+
+
+
+<section id="raices"><hr>
+
+<h1>Ejercicio 12: Raíces de una ecuación cuadrática</h1>
+
+<p>Ingresa los valores de a, b y c para resolver ax² + bx + c = 0.</p>
+
+<form id="formularioRaices">
+
+    <label>Valor de a:</label>
+    <input type="number" id="a" step="any" required>
+
+    <label>Valor de b:</label>
+    <input type="number" id="b" step="any" required>
+
+    <label>Valor de c:</label>
+    <input type="number" id="c" step="any" required>
+
+    <button type="submit">Calcular raíces</button>
+
+</form>
+
+<p id="resultadoRaices"></p>
+</section>
+
+
+<section id="pi"><hr>
+
+<h1>Ejercicio 13: Aproximación de PI</h1>
+
+<p>
+    Este programa calcula una aproximación de PI
+    utilizando una suma y un ciclo FOR.
+</p>
+
+<form id="formularioPi">
+
+    <label>Cantidad de términos:</label>
+    <input type="number" id="terminos" min="1" step="1" required>
+
+    <button type="submit">Calcular PI</button>
+
+</form>
+
+<p id="resultadoPi"></p>
+</section>
+
+
+
+</body>
+</html>
